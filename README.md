@@ -4,6 +4,7 @@ Revision: [Nic Swart](mailto:nic@cerebri.com)
 
 Ambari service for installing and managing ELK stack on HDP clusters.
 
+Note: These versions may be wrong, we are installing the 5.x repo, testing needed.
 - Ambari Version=2.2.2
 - Elasticsearch Version=2.3.5
 - Logstash Version=2.3.4
@@ -39,26 +40,12 @@ Edit */var/lib/ambari-server/resources/stacks/HDP/2.4/repos/repoinfo.xml* to add
 ```
 
 ## Add ELK Service
-1. On the Ambari Server, browse to the */var/lib/ambari-server/resources/stacks/HDP/2.4/services* directory. In this case, we will browse to the HDP 2.4 Stack definition.
-
+1. On the Ambari Server, clone the ELK Service repo to the appropriate place:
 ```
-cd /var/lib/ambari-server/resources/stacks/HDP/2.4/services
-```
-
-2. Create a directory named */var/lib/ambari-server/resources/stacks/HDP/2.0.6/services/__ELK__* that will contain the service definition for ELK.
-
-```
-mkdir /var/lib/ambari-server/resources/stacks/HDP/2.4/services/ELK
-cd /var/lib/ambari-server/resources/stacks/HDP/2.4/services/ELK
+git clone https://github.com/Cerebri/ambari-elk-service.git /var/lib/ambari-server/resources/stacks/HDP/2.6/services/ELK
 ```
 
-3. Download and copy this project to service definition directory.
-
-```
-cp -r ambari-elk-service/* /var/lib/ambari-server/resources/stacks/HDP/2.4/services/ELK
-```
-
-4. Restart Ambari Server for this new service definition to be distributed to all the Agents in the cluster.
+2. Restart Ambari Server for this new service definition to be distributed to all the Agents in the cluster.
 
 ```
 ambari-server restart
