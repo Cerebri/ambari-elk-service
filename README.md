@@ -1,5 +1,7 @@
 # ambari-elk-service 
 
+Revision: [Nic Swart](mailto:nic@cerebri.com)
+
 Ambari service for installing and managing ELK stack on HDP clusters.
 
 - Ambari Version=2.2.2
