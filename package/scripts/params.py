@@ -40,8 +40,8 @@ elastic_conf_dir = "/etc/elasticsearch"
 elastic_data_dir = config['configurations']['elasticsearch-site']['path.data']
 elastic_log_dir = config['configurations']['elasticsearch-site']['path.logs']
 
-logstash_home = "/opt/logstash"
-logstash_bin = "/opt/logstash/bin"
+logstash_home = "/usr/share/logstash"
+logstash_bin = "/usr/share/logstash/bin"
 logstash_conf_dir = "/etc/logstash/conf.d"
 logstash_log_dir = "/var/log/logstash"
 logstash_sincedb_path = format("{logstash_log_dir}/.sincedb2")
