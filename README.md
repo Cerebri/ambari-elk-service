@@ -12,6 +12,8 @@ Note: These versions may be wrong, we are installing the 5.x repo, testing neede
 
 ## Add ELK Repository
 
+Note: This should be done via the Cloudbreak pre-recipes for each node.
+
 Edit */var/lib/ambari-server/resources/stacks/HDP/2.4/repos/repoinfo.xml* to add additional <repo> entries for ELK.
 
 ```
@@ -45,10 +47,14 @@ Edit */var/lib/ambari-server/resources/stacks/HDP/2.4/repos/repoinfo.xml* to add
 git clone https://github.com/Cerebri/ambari-elk-service.git /var/lib/ambari-server/resources/stacks/HDP/2.6/services/ELK
 ```
 
-2. Restart Ambari Server for this new service definition to be distributed to all the Agents in the cluster.
+2. Restart Ambari Server for this new service definition to be picked up.
 
 ```
-ambari-server restart
+service ambari-server stop
+
+sleep 15
+
+service ambari-server start
 ```
 
 ## Install ELK Service  (via Ambari Web "Add Services")
