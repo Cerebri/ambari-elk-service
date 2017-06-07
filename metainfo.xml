@@ -3,8 +3,8 @@
   <schemaVersion>2.0</schemaVersion>
   <services>
     <service>
-      <name>OCCI</name>
-      <displayName>OCCI</displayName>
+      <name>ELK</name>
+      <displayName>ELK Stack</displayName>
       <comment>Log Analysis with the ELK stack (Elasticsearch, Logstash, Kibana)</comment>
       <version>0.1.0</version>
       <quickLinksConfigurations>
