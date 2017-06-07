@@ -4,11 +4,12 @@ Revision: [Nic Swart](mailto:nic@cerebri.com)
 
 Ambari service for installing and managing ELK stack on HDP clusters.
 
-Note: These versions may be wrong, we are installing the 5.x repo, testing needed.
-- Ambari Version=2.2.2
-- Elasticsearch Version=2.3.5
-- Logstash Version=2.3.4
-- Kibana Version=4.5.4
+Note: These versions may be wrong, we are installing the 5.x repo, testing needed to see if the configuration matches with updated versions.
+- Ambari Version=2.5.0.3-7
+- HDP Stack Version: HDP-2.6.0.3
+- Elasticsearch Version=2.3.5 [TBD 5.4.1-1]
+- Logstash Version=2.3.4 [TBD 1:5.4.1-1]
+- Kibana Version=4.5.4 [TBD 5.4.1-1]
 
 ## Add ELK Repository
 
