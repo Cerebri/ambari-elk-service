@@ -34,6 +34,7 @@ def logstash(role=None):
               owner=params.logstash_user,
               group=params.logstash_user_group,
               mode=0755,
+              recursive_ownership=True,
               cd_access='a'
             )
 

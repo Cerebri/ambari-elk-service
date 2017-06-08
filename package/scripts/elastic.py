@@ -35,6 +35,7 @@ def elastic(name=None):
               owner=params.elastic_user,
               group=params.elastic_user_group,
               mode=0755,
+              recursive_ownership=True,
               cd_access='a'
             )
 
