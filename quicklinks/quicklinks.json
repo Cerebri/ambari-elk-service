@@ -8,8 +8,8 @@
 
     "links": [
       {
-        "name": "OCCI",
-        "label": "OCCI UI",
+        "name": "ELK",
+        "label": "Kibana UI",
         "requires_user_name": "false",
         "component_name": "KIBANA_SERVER",
         "url":"%@://%@:%@/app/kibana#/dashboard/cluster",

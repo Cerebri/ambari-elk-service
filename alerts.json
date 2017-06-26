@@ -1,5 +1,5 @@
 {
-  "OCCI": {
+  "ELK": {
     "KIBANA_SERVER": [
       {
         "name": "mapred_job",
@@ -10,7 +10,7 @@
         "enabled": true,
         "source": {
           "type": "SCRIPT",
-          "path": "HDP/2.5/services/OCCI/package/scripts/alerts/alert_mapred_long_job.py",
+          "path": "HDP/2.6/services/ELK/package/scripts/alerts/alert_mapred_long_job.py",
           "parameters" : [
             {
               "name" : "mr.exectime.warning.threshold",
@@ -44,7 +44,7 @@
         "enabled": true,
         "source": {
           "type": "SCRIPT",
-          "path": "HDP/2.5/services/OCCI/package/scripts/alerts/logstash_agent_monitor.py"
+          "path": "HDP/2.6/services/ELK/package/scripts/alerts/logstash_agent_monitor.py"
         }
       }
     ]
