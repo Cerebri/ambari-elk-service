@@ -48,7 +48,7 @@ logstash_sincedb_path = format("{logstash_log_dir}/.sincedb2")
 
 kibana_home = "/usr/share/kibana"
 kibana_bin = "/usr/share/kibana/bin"
-kibana_conf_dir = "/usr/share/kibana/config"
+kibana_conf_dir = "/etc/kibana"
 kibana_log_dir = config['configurations']['kibana-site']['logging.dest']
 
 logstash_pid_dir = status_params.logstash_pid_dir
