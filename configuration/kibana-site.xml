@@ -30,19 +30,19 @@
     </value-attributes>
   </property>
   <property>
+    <name>server.host</name>
+    <value>"0.0.0.0"</value>
+    <description>Specifies the address to which the Kibana server will bind. IP addresses and host names are both valid values.</description>
+  </property>
+  <property>
     <name>kibana.index</name>
     <value>.kibana</value>
-    <description>Kibana uses an index in Elasticsearch to 
-    store saved searches, visualizations and dashboards. 
-    It will create a new index if it doesn't already exist.
-    </description>
+    <description>Kibana uses an index in Elasticsearch to store saved searches, visualizations and dashboards. It will create a new index if it doesn't already exist.</description>
   </property>
   <property>
     <name>logging.dest</name>
     <value>/var/log/kibana</value>
-    <description>If you would like to send 
-    the log output to a file you can set the path below.
-    </description>
+    <description>If you would like to send the log output to a file you can set the path below.</description>
   </property>
   <!--property>
     <name>elasticsearch.username</name>

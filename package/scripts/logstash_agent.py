@@ -39,7 +39,7 @@ class LogstashAgent(Script):
     import params
     env.set_params(params)
     self.configure(env)
-    start_cmd = format("{logstash_bin}/logstash agent -f {logstash_conf_dir}/logstash.conf --log  {logstash_log_dir}/logstash.log & echo $! > {logstash_pid_file} &")
+    start_cmd = format("{logstash_bin}/logstash --path.config {logstash_conf_dir}/logstash.conf --path.logs  {logstash_log_dir}/logstash.log & echo $! > {logstash_pid_file} &")
     time.sleep(60)
     Execute(start_cmd) 
     

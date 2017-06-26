@@ -112,6 +112,7 @@ elastic_cluster_name = config['configurations']['elasticsearch-site']['cluster.n
 elastic_port = config['configurations']['elasticsearch-site']['http.port']
 
 kibana_port = config['configurations']['kibana-site']['server.port']
+kibana_host = config['configurations']['kibana-site']['server.host']
 kinana_index = config['configurations']['kibana-site']['kibana.index']
 
 if (('logstash-data-source' in config['configurations']) and ('content' in config['configurations']['logstash-data-source'])):
